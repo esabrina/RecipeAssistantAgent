@@ -21,17 +21,18 @@ The Minimum Viable Product (MVP) of this project focuses on the core conversatio
 - AI SDK: Google Gemini SDK
 
 ## How to Run the Notebook in Google Colab
-1. Open the Notebook: Navigate to the project repository on GitHub (https://github.com/esabrina/RecipeAssistantAgent) and click on the Recipe_Assistant_MVP.ipynb file.
+1. Open the Notebook: Navigate to the project repository on GitHub (https://github.com/esabrina/RecipeAssistantAgent) and click on the  `Recipe_Assistant_MVP.ipynb` file.
 2. Open in Colab: Click the "Open in Colab" button at the top of the notebook preview on GitHub. This will open the notebook directly in your Google Colab environment.
 3. Configure Your Google API Key:
-   - You need a Google API Key to use the Gemini SDK. If you don't have one, you can obtain it from the Google AI Studio.
-   - Securely add your API key in Colab: Click the 🔑 icon in the left sidebar of your Colab notebook. Add a new secret with the name GOOGLE_API_KEY and paste your API key in the "Value" field. Ensure the "Notebook access" is enabled for this secret.
+   - You need a Google API Key to use the Gemini SDK. If you don't have one, you can obtain it from the [Google AI Studio](https://aistudio.google.com/app/apikey).
+   - Securely add your API key in Colab: Click the 🔑 icon in the left sidebar of your Colab notebook. Add a new secret with the name `GOOGLE_API_KEY` and paste your API key in the "Value" field. Ensure the "Notebook access" is enabled for this secret.
    - The code in the notebook is configured to read the API key from Colab Secrets.
 4. Run the Code Cells:
    - Execute each code cell in the notebook sequentially.
    - The first cells will install necessary libraries and configure the API key.
    - The subsequent cells initialize the Gemini model(s) and the chat interface.
    - The final cell contains the main interaction loop.
-5. Interact with the Assistant: Once the assistant is initialized, you will see a prompt asking for your input. Type your recipe requests (e.g., *"I have chicken, broccoli, and rice. I want a gluten-free lunch for 2 people and I want to adapt it for the Airfryer."*) and press Enter.Exit: Type exit in the chat to end the conversation.
+5. Interact with the Assistant: Once the assistant is initialized, you will see a prompt asking for your input. Type your recipe requests (e.g., *"I have chicken, broccoli, and rice. I want a gluten-free lunch for 2 people and I want to adapt it for the Airfryer."*) and press Enter.
+6. Exit: Type `exit` in the chat to end the conversation.
 ## Contributing
 If you'd like to contribute to this project, please feel free to fork the repository and submit a pull request.
