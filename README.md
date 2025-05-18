@@ -1,6 +1,7 @@
 # Personal Recipe Assistant Agent
+> A multi-agent system for generating and adapting meal recipes
 ## Project Overview
-This project develops a conversational Artificial Intelligence agent designed to assist users, understanding natural language requests, in discovering and adapting culinary recipes. Leveraging the Google Gemini SDK, the agent interacts with users via a text-based chat interface, taking into account available ingredients and dietary restrictions. As a bonus functionality, it also explores adapting recipes for Airfryer cooking, promoting healthier preparation methods. For more information, see the complete project file.
+This project develops a conversational Artificial Intelligence agent designed to assist users, understanding natural language requests, in discovering and adapting culinary recipes. Leveraging the Google Gemini SDK, the agent interacts with users via a text-based chat interface, taking into account available ingredients and dietary restrictions. As a bonus functionality, it also explores adapting recipes for Airfryer cooking, promoting healthier preparation methods. For more information, [see](Recipe_Assistant_MVP_Project.pdf) the complete project file.
 
 The project is implemented in Python within the Google Colab environment, demonstrating the use of large language models for practical, interactive applications.
 ### Multi-Agent Structure:
@@ -31,6 +32,6 @@ The Minimum Viable Product (MVP) of this project focuses on the core conversatio
    - The first cells will install necessary libraries and configure the API key.
    - The subsequent cells initialize the Gemini model(s) and the chat interface.
    - The final cell contains the main interaction loop.
-5. Interact with the Assistant: Once the assistant is initialized, you will see a prompt asking for your input. Type your recipe requests (e.g., "I have chicken, broccoli, and rice. I want a gluten-free lunch for 2 people and I want to adapt it for the Airfryer.") and press Enter.Exit: Type exit in the chat to end the conversation.
+5. Interact with the Assistant: Once the assistant is initialized, you will see a prompt asking for your input. Type your recipe requests (e.g., *"I have chicken, broccoli, and rice. I want a gluten-free lunch for 2 people and I want to adapt it for the Airfryer."*) and press Enter.Exit: Type exit in the chat to end the conversation.
 ## Contributing
 If you'd like to contribute to this project, please feel free to fork the repository and submit a pull request.
