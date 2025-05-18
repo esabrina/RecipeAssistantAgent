@@ -7,6 +7,19 @@ The project is implemented in Python within the Google Colab environment, demons
 ### Multi-Agent Structure:
 While the user interacts with a single assistant, the internal logic is structured conceptually as a multi-agent system orchestrated by the main code. Different parts of the process, such as understanding the user, generating the base recipe, and adapting for restrictions or Airfryer, can be seen as distinct "agents" or modules working together. This approach demonstrates how complex tasks can be broken down and handled by specialized components, even when powered by a single underlying model like Gemini.
 
+``` mermaid
+flowchart LR
+    A[User input] --> B(Request agent)
+    B --> |NLP| C(Recipe Generator agent)
+    C --> D{Has restrictions?}
+    D --> |Y| E(Restriction Adapter agent) 
+    E --> F{Adapt to airfryer?}
+    F --> |Y| G(Airfryer Adapter agent)   
+    G --> H(Agent system output)
+    D --> |N| F
+    F --> |N| H
+```
+    
 ### Features Highlights (MVP)
 The Minimum Viable Product (MVP) of this project focuses on the core conversational and recipe generation/adaptation capabilities using the Google Gemini SDK. Key aspects include:
 - Natural Language Processing (NLP): Understanding user inputs regarding ingredients, restrictions, meal types, and adaptation requests.
